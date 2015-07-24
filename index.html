@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Pydomainfinder by SHADOWxCODEX</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Pydomainfinder</h1>
+        <h2>Passive Domain Discover Tool using Python and a Whois API</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/SHADOWxCODEX/pydomainfinder/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/SHADOWxCODEX/pydomainfinder/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/SHADOWxCODEX/pydomainfinder" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="pydomainfinder" class="anchor" href="#pydomainfinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>pydomainfinder</h1>
+
+<p>Passive Domain Discover Tool using Python and a Whois API</p>
+
+<p>This tool is meant to be used as a form of passive reconnaissance for Penetration Testing. It will allow you to find additional domains owned by a company or website you are trying to test.</p>
+
+<p>It is important to note, that if you go to one of these site you break your passive reconnaissance. </p>
+
+<p>There will be an additional tool coming soon to grab screenshots passively as well.</p>
+
+<p><a href="link">See Main Site! link</a></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>First you need to download the dependencies...</p>
+
+<pre><code>pip install requests
+</code></pre>
+
+<p>or </p>
+
+<pre><code>easy_install requests
+</code></pre>
+
+<p>Then download the actual program</p>
+
+<pre><code>wget https://github.com/SHADOWxCODEX/pydomainfinder/archive/master.zip
+
+unzip master.zip
+</code></pre>
+
+<h2>
+<a id="use" class="anchor" href="#use" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use</h2>
+
+<p>Run the program </p>
+
+<pre><code>python pydomainfinder.py
+</code></pre>
+
+<ol>
+<li><p>The first prompt asks you for your targets acronym. For example "GGA".</p></li>
+<li><p>The program then prompts for the meaning of each character in the acronym. </p></li>
+<li><p>The program asks if you want the domain contents in order or full combination. This will greatly reduce the amount of items you are polling for if you select in order. </p></li>
+<li><p>The program asks if you want .com's, .net's, .org's, or all.</p></li>
+<li><p>The program confirms you want to make X amount of API calls.</p></li>
+<li><p>The program checks the domains and stores them into the log files.</p></li>
+</ol>
+
+<h1>
+<a id="log-files" class="anchor" href="#log-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Log Files</h1>
+
+<ul>
+<li>domain_available.txt
+
+<ul>
+<li>This file shows all domains that are available to register.</li>
+</ul>
+</li>
+<li>domain_log.txt
+
+<ul>
+<li>This file shows all the domains that were tested.</li>
+</ul>
+</li>
+<li>domain_registered.txt
+
+<ul>
+<li>This file shows all the domains that are currently registered (aka possible targets)</li>
+</ul>
+</li>
+<li>domain_whois.txt
+
+<ul>
+<li>This file dumps the full whois data for later consumption and targets.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>TODO</h2>
+
+<ul>
+<li>Allow other types of API's to be use (Aggregate to get more requests per month)</li>
+<li>Use JsonWhois to pull passive screenshots of targets website.</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
