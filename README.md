@@ -7,7 +7,7 @@ It is important to note, that if you go to one of these site you break your pass
 
 There will be an additional tool coming soon to grab screenshots passively as well.
 
-[See Main Site! link] (link)
+[See Main Site! http://shadowxcodex.github.io/pydomainfinder] (http://shadowxcodex.github.io/pydomainfinder)
 
 Install
 ---
