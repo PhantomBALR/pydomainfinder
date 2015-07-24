@@ -22,7 +22,7 @@ or
 
 Then download the actual program
 
-    wget link
+    wget https://github.com/SHADOWxCODEX/pydomainfinder/archive/master.zip
     
     unzip master.zip
     

@@ -9,7 +9,7 @@ import itertools
 
 print('Author: SHADOWxCODEX')
 print('Date Created: 7-24-2015')
-print('Source: link')
+print('Source: https://github.com/SHADOWxCODEX/pydomainfinder')
 
 acronym = input('Please enter your company acronym : ')
 acc_list = list(acronym)
